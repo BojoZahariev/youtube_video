@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+
+/* Style the top navigation bar */
+
+.navbar {
+  overflow: hidden;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.menu-icon {
+  float: left;
+  margin: 15px;
+  color: #A9A9A9;
+  cursor: pointer;
+}
+
+#logo {
+  margin-top: -22px;
+  margin-bottom: -20px;
+  height: 90px;
+  width: 100px;
+}
+
+
+/* Style the navigation bar links */
+
+.navbar a {
+  float: left;
+  display: block;
+  text-decoration: none;
+}
+
+.navbar .search-container {
+  float: left;
+  margin-left: 15%;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 9px;
+  font-size: 17px;
+  width: 550px;
+}
+
+.navbar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 9px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.fa-video,
+.fa-th,
+.fa-comment,
+.fa-ellipsis-v,
+.signin {
+  float: right;
+  color: #A9A9A9;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+
+/* Column container */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Create two unequal columns that sits next to each other */
+
+
+/* Main column */
+
+.main {
+  flex: 60%;
+  padding: 10px;
+  background-color: green;
+}
+
+iframe {
+  outline-color: #eeeeee;
+  width: 100%;
+  height: 523px;
+  left: 0px;
+  top: 0px;
+}
+
+.info {
+  margin-top: 50px;
+  color: #0A0A0A;
+  line-height: 1.2rem;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.under {
+  margin-bottom: 5px;
+}
+
+
+#views {
+  float: left;
+  padding: 10px;
+  color: #A9A9A9
+}
+
+.fa-thumbs-up,
+.fa-thumbs-down,
+.fa-share,
+.fa-plus {
+  padding: 5px 10px;
+  float: right;
+  color: #A9A9A9;
+  cursor: pointer;
+}
+
+#around_pic {
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+
+#round_pic {
+  border-radius: 50%;
+  width: 70px;
+  height: 65px;
+  float: left;
+}
+
+#next_to_pic {
+  float: left;
+  margin-left: 50px;
+}
+
+#desc {
+  margin-left: 120px;
+}
+
+
+/* Sidebar*/
+
+.side {
+  flex: 30%;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.img {
+  background-color: #aaa;
+  height: 94px;
+  width: 168px;
+  padding: 20px;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 700px) {
+  .container, .navbar {
+    flex-direction: column;
+  }
+  iframe {
+    height: 315px;
+  }
+  .navbar input[type=text] {
+    width: 300px;
+  }
+}
