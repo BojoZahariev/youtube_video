@@ -140,9 +140,23 @@ iframe {
   cursor: pointer;
 }
 
+#subscribe {
+  text-align: center;
+  width: 100px;
+  display: inline-block;
+  float: right;
+  margin-top: -140px;
+  padding: 10px;
+  color: white;
+  font-weight: 500;
+  background-color: red;
+  cursor: pointer;
+}
+
 #around_pic {
   margin-bottom: 80px;
   margin-top: 20px;
+  overflow: hidden;
 }
 
 #round_pic {
@@ -159,6 +173,7 @@ iframe {
 
 #desc {
   margin-left: 120px;
+  margin-top: -80px;
 }
 
 #comment_menu {
@@ -185,7 +200,6 @@ iframe {
 
 .first_comment {
   margin-top: 30px;
-  width: 300px;
   overflow: hidden;
 }
 
@@ -199,11 +213,13 @@ iframe {
 
 #span_msg {
   border-bottom: 1px solid #909090;
+  padding: 0px 5px 5px 0px;
   margin-left: 10px;
   margin-top: 15px;
   float: right;
   cursor: text;
   overflow: hidden;
+  width: 85%;
 }
 
 .single_comment {
@@ -238,6 +254,24 @@ a {
   flex: 30%;
   padding-left: 10px;
   font-size: 15px;
+}
+
+.autoplay {
+  overflow: hidden;
+}
+
+#upnext {
+  float: left;
+  display: inline-block;
+}
+
+.autoplay-icon,
+.autoplay_text {
+  float: right;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .side_part,
