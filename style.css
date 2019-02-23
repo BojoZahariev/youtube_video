@@ -65,7 +65,7 @@ body {
   margin-top: 8px;
   margin-right: 16px;
   background: #ddd;
-  font-size: 17px;
+  font-size: 16px;
   cursor: pointer;
   color: #909090;
 }
@@ -106,7 +106,7 @@ body {
 iframe {
   outline-color: #eeeeee;
   width: 100%;
-  height: 435px;
+  height: 635px;
   left: 0px;
   top: 0px;
 }
@@ -257,6 +257,7 @@ a {
 
 .autoplay {
   overflow: hidden;
+  margin-bottom: -20px;
 }
 
 #upnext {
@@ -276,7 +277,6 @@ a {
 .side_part,
 .side_part1 {
   height: 94px;
-  margin-top: 20px;
   margin-bottom: 10px;
 }
 
